@@ -9,15 +9,15 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.stereotype.Component;
 
 @Component
-public class FeignBossApplication implements CommandLineRunner {
-    public FeignBoss feignBoss;
+public class FeignBossCATApplication implements CommandLineRunner {
+    public PracticalCATFeignBoss feignBoss;
 
-    public FeignBossApplication(FeignBoss feignBoss){
+    public FeignBossCATApplication(PracticalCATFeignBoss feignBoss){
         this.feignBoss = feignBoss;
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(FeignBossApplication.class, args);
+        SpringApplication.run(FeignBossCATApplication.class, args);
     }
 
     @Override

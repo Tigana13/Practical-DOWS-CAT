@@ -5,7 +5,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
 @FeignClient(name = "testing", url = "http://10.51.10.111:2000")
-public interface FeignBoss {
+public interface PracticalCATFeignBoss {
     @RequestMapping(method = RequestMethod.POST, value = "students")
     Student register(@RequestBody Student student);
 
